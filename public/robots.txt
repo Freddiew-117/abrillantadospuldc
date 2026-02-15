@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abrillantadospuldc.com/sitemap.xml

@@ -1,0 +1,10 @@
+/* Layout principal - flex para que footer quede abajo */
+#root {
+  flex: 1;
+}
+
+/* Contenedor de contenido principal */
+main {
+  flex: 1;
+  padding-top: var(--spacing-md);
+}
