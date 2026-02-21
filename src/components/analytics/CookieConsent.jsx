@@ -78,7 +78,7 @@ export default function CookieConsent() {
                 acceptAllBtn: 'Aceptar todo',
                 acceptNecessaryBtn: 'Solo necesarias',
                 showPreferencesBtn: 'Gestionar preferencias',
-                footer: '<a href="/gpdr.html">Política de privacidad</a> · <a href="/contacto">Contacto</a>',
+                footer: '<a href="/aviso-legal">Política de privacidad</a> · <a href="/contacto">Contacto</a>',
               },
               preferencesModal: {
                 title: 'Gestionar preferencias de cookies',
@@ -90,7 +90,7 @@ export default function CookieConsent() {
                 sections: [
                   {
                     title: 'Uso de cookies',
-                    description: 'Utilizamos cookies para asegurar las funcionalidades básicas del sitio. Puede elegir habilitar o deshabilitar cada categoría. Lea la <a href="/gpdr.html" class="cc-link">política de privacidad</a>.',
+                    description: 'Utilizamos cookies para asegurar las funcionalidades básicas del sitio. Puede elegir habilitar o deshabilitar cada categoría. Lea la <a href="/aviso-legal" class="cc-link">política de privacidad</a>.',
                   },
                   {
                     title: 'Cookies necesarias <span class="pm__badge">Siempre activas</span>',

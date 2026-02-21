@@ -1,3 +1,5 @@
+import { PRESUPUESTO_BENEFICIOS } from '@/data/presupuestoData'
+
 /**
  * Sección SEO: Restauración de suelos en chalets del Aljarafe y zonas cubiertas.
  * Imágenes de fondo en /images/sitios (nombre de archivo por zona).
@@ -66,6 +68,11 @@ export default function AljarafeZonesSection() {
           En Espartinas, Tomares, Mairena del Aljarafe, Sanlúcar la Mayor, Palomares del Río, Almensilla, Bormujos, Simon Verde y alrededores.
           Presupuesto sin compromiso. Llámanos o escríbenos por WhatsApp.
         </p>
+        <ul className="aljarafe-zones__beneficios" aria-label="Incluye">
+          {PRESUPUESTO_BENEFICIOS.map((b, i) => (
+            <li key={i}>👉 {b}</li>
+          ))}
+        </ul>
       </div>
     </section>
   )

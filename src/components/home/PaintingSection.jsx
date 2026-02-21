@@ -11,7 +11,7 @@ export default function PaintingSection() {
     { title: 'Calidad Superior', text: 'Utilizamos pinturas de alta calidad para un acabado duradero.' },
     { title: 'Técnicas Avanzadas', text: 'Técnicas modernas y eficientes que completan los proyectos con rapidez.' },
     { title: 'Limpieza y Orden', text: 'Entorno de trabajo limpio durante todo el proceso.' },
-    { title: 'Presupuestos a Medida', text: 'Presupuestos personalizados sin compromiso.' },
+    { title: 'Presupuestos a Medida', text: 'Presupuesto sin compromiso. Reserva evaluación técnica gratuita, diagnóstico en sitio, evaluación para comunidades y chalets.' },
     { title: 'Profesionalismo Garantizado', text: 'Equipo de pintores profesionales y experimentados.' },
   ]
 

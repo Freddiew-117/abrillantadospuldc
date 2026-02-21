@@ -14,7 +14,7 @@ export default function ContactBar() {
     <div className="contact-bar" role="banner">
       <div className="contact-bar__content">
         <span className="contact-bar__slogan">
-          Háblanos por WhatsApp o llámanos para un presupuesto sin compromiso
+          Presupuesto sin compromiso · 👉 Evaluación técnica gratuita · Diagnóstico en sitio · Comunidades y chalets
         </span>
         <span className="contact-bar__slogan">|</span>
         <div className="contact-bar__ctas">

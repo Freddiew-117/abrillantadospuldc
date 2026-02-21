@@ -1,4 +1,5 @@
 import { useConversionTracking } from '@/hooks/useConversionTracking'
+import { PRESUPUESTO_BENEFICIOS } from '@/data/presupuestoData'
 import MetaTags from '@/components/seo/MetaTags'
 import JsonLd from '@/components/seo/JsonLd'
 import { seoConfig } from '@/data/seoKeywords'
@@ -64,7 +65,12 @@ export default function LandingPremium() {
 
       <section className="cta-section">
         <h2>Responde en menos de 24h</h2>
-        <p>Sin compromiso. Escríbenos por WhatsApp o llámanos.</p>
+        <p>Presupuesto sin compromiso. Escríbenos por WhatsApp o llámanos.</p>
+        <ul className="cta-section__beneficios" aria-label="Incluye">
+          {PRESUPUESTO_BENEFICIOS.map((b, i) => (
+            <li key={i}>👉 {b}</li>
+          ))}
+        </ul>
         <div className="cta-group">
           <a
             href={whatsappUrl}

@@ -1,5 +1,6 @@
 import PhoneButton from '@/components/shared/PhoneButton'
 import { useConversionTracking } from '@/hooks/useConversionTracking'
+import { PRESUPUESTO_BENEFICIOS } from '@/data/presupuestoData'
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP || '34615434956'
 const WHATSAPP_MESSAGE = 'Hola, me gustaría solicitar un presupuesto de pulido/abrillantado'
@@ -27,8 +28,13 @@ export default function CTASection() {
         <p className="cta-section__or">o llámanos ahora:</p>
         <PhoneButton variant="button" label="Teléfono" />
         <p className="cta-section__disclaimer">
-          Responde en menos de 24h. Sin compromiso.
+          Responde en menos de 24h. Presupuesto sin compromiso.
         </p>
+        <ul className="cta-section__beneficios" aria-label="Incluye">
+          {PRESUPUESTO_BENEFICIOS.map((b, i) => (
+            <li key={i}>👉 {b}</li>
+          ))}
+        </ul>
       </div>
     </section>
   )

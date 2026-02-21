@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react'
 import MetaTags from '@/components/seo/MetaTags'
+import { PRESUPUESTO_BENEFICIOS } from '@/data/presupuestoData'
 import JsonLd from '@/components/seo/JsonLd'
 import { seoConfig } from '@/data/seoKeywords'
 import ContactInfo from '@/components/contact/ContactInfo'
@@ -20,6 +21,11 @@ export default function ContactPage() {
             <p className="contact-page__lead">
               Presupuesto sin compromiso. Atendemos en Dos Hermanas, Sevilla y provincia.
             </p>
+            <ul className="contact-page__beneficios" aria-label="Incluye">
+              {PRESUPUESTO_BENEFICIOS.map((b, i) => (
+                <li key={i}>👉 {b}</li>
+              ))}
+            </ul>
           </div>
         </header>
         <div className="contact-page__content section__inner">

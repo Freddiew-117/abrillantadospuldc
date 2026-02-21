@@ -3,6 +3,7 @@ import MetaTags from '@/components/seo/MetaTags'
 import JsonLd from '@/components/seo/JsonLd'
 import { seoConfig } from '@/data/seoKeywords'
 import { ZONAS_SERVICIO, SEGMENTOS_CLIENTE, EQUIPAMIENTO } from '@/data/aboutData'
+import { PRESUPUESTO_BENEFICIOS } from '@/data/presupuestoData'
 import Machinery from '@/components/about/Machinery'
 import GuaranteeSection from '@/components/shared/GuaranteeSection'
 
@@ -132,6 +133,11 @@ export default function AboutPage() {
             <h2 id="cta-heading" className="about-page__cta-title">
               Presupuesto sin compromiso
             </h2>
+            <ul className="about-page__cta-beneficios" aria-label="Incluye">
+              {PRESUPUESTO_BENEFICIOS.map((b, i) => (
+                <li key={i}>👉 {b}</li>
+              ))}
+            </ul>
             <p className="about-page__cta-text">
               Comunidades de vecinos, oficinas, particulares. Atendemos en todo el Aljarafe y Sevilla.
             </p>

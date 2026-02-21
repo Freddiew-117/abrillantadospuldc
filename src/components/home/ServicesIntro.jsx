@@ -1,3 +1,5 @@
+import { PRESUPUESTO_BENEFICIOS } from '@/data/presupuestoData'
+
 export default function ServicesIntro() {
   const zonas = 'Dos Hermanas, Utrera, Alcalá de Guadaíra, Sevilla, Mairena del Alcor y El Viso'
   return (
@@ -21,6 +23,11 @@ export default function ServicesIntro() {
             <p>
               Avalados por más de 30 años de experiencia en el sector. Servicio premium con acabados de alto nivel y presupuesto sin compromiso.
             </p>
+            <ul className="services-intro__beneficios" aria-label="Incluye">
+              {PRESUPUESTO_BENEFICIOS.map((b, i) => (
+                <li key={i}>👉 {b}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

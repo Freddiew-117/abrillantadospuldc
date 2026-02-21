@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Analytics from '@/components/analytics/Analytics'
 import CookieConsent from '@/components/analytics/CookieConsent'
 import Header from '@/components/layout/Header'
+import ScrollToTop from '@/components/layout/ScrollToTop'
 import Footer from '@/components/layout/Footer'
 import ContactBar from '@/components/layout/ContactBar'
 import WhatsAppButton from '@/components/shared/WhatsAppButton'
@@ -24,6 +25,7 @@ function PageFallback() {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <CookieConsent />
       <Analytics />
       <ContactBar />

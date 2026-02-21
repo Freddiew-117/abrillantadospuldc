@@ -22,7 +22,7 @@ const services = [
   {
     icon: '🏆',
     title: 'Paquete Lujo',
-    desc: 'Pulido + Abrillantado + 12 meses de mantenimiento',
+    desc: 'Pulido y acristalado + un mantenimiento incluido al año siguiente',
   },
 ]
 
