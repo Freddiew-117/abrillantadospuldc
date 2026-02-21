@@ -1,15 +1,15 @@
 export default function Machinery() {
   return (
-    <section className="machinery section">
+    <section className="machinery section" aria-labelledby="machinery-heading">
       <div className="section__inner">
-        <h2>La maquinaria profesional para pulido de suelos</h2>
+        <h2 id="machinery-heading">Maquinaria profesional para pulido de suelos en el Aljarafe</h2>
         <p className="machinery__intro">
-          Equipo especializado para cada tipo de suelo: mármol, terrazo, granito y hormigón. Aspiradoras para trabajo sin polvo y acabados limpios. Servicio en Dos Hermanas, Sevilla y provincia.
+          Equipo especializado para cada tipo de suelo: mármol, terrazo, granito y hormigón. Aspiradoras industriales para trabajo sin polvo y acabados limpios. Atendemos en Espartinas, Tomares, Mairena del Aljarafe, Sevilla y toda la provincia.
         </p>
         <div className="machinery__image">
           <img
             src="/images/maquinas.jpeg"
-            alt="Maquinaria profesional pulido de suelos - Pul D.C Dos Hermanas"
+            alt="Maquinaria profesional para pulido de suelos - Pul D.C Aljarafe y Sevilla"
             loading="lazy"
             width={1200}
             height={400}

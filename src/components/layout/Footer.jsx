@@ -42,6 +42,18 @@ export default function Footer() {
           {' · '}
           Abrillantados Pul D.C
         </p>
+        {/* Google Business Profile link - Update with your actual URL */}
+        {import.meta.env.VITE_GOOGLE_BUSINESS_URL && (
+          <a
+            href={import.meta.env.VITE_GOOGLE_BUSINESS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'white', opacity: 0.9, fontSize: 'var(--font-size-sm)' }}
+            aria-label="Ver reseñas en Google"
+          >
+            ⭐ Ver reseñas en Google
+          </a>
+        )}
       </div>
     </footer>
   )

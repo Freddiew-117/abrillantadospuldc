@@ -2,15 +2,15 @@ const BASE_URL = import.meta.env.VITE_SITE_URL || 'https://abrillantadospuldc.co
 
 export const seoConfig = {
   home: {
-    title: 'Pulido profesional de mármol en Dos Hermanas | Pul D.C',
-    description: 'Pulidores profesionales de suelos en Dos Hermanas, Sevilla. Especialistas en mármol, terrazo, granito y hormigón. Pulidos sin polvo, presupuestos sin compromiso. +34 615 43 49 56',
-    keywords: 'pulidos suelos Dos Hermanas, abrillantado mármol Sevilla, restauración suelos mármol, pulido terrazo, granito, hormigón, sin polvo, profesionales',
+    title: 'Pulido profesional de mármol en Dos Hermanas y Aljarafe | Pul D.C',
+    description: 'Restauración de suelos de mármol en chalets del Aljarafe sin necesidad de reforma. Pul D.C: Espartinas, Tomares, Mairena del Aljarafe, Sanlúcar, Palomares del Río, Almensilla, Bormujos. Pulidos sin polvo, presupuesto sin compromiso.',
+    keywords: 'restauración suelos mármol Aljarafe, pulido mármol chalets Aljarafe, abrillantado Espartinas Tomares Mairena del Aljarafe, Simon Verde, Sanlúcar la Mayor Palomares Almensilla Bormujos',
     canonical: BASE_URL + '/',
   },
   about: {
-    title: 'Sobre Nosotros | Pulidos Pul D.C - Dos Hermanas, Sevilla',
-    description: 'Pul D.C: más de 30 años de experiencia en pulido de suelos. Máquinas profesionales, pulidos sin polvo y acabados premium en Dos Hermanas y Sevilla.',
-    keywords: 'pulidores profesionales Sevilla, maquinaria pulido suelos, experiencia pulido mármol',
+    title: 'Pulido de suelo en Aljarafe y Sevilla | Comunidades, Oficinas, Suelos Históricos | Pul D.C',
+    description: 'Especialistas en pulido de suelo en Aljarafe: Espartinas, Tomares, Mairena del Aljarafe, Sanlúcar la Mayor, Palomares, Almensilla, Bormujos, Sevilla. Comunidades de vecinos, oficinas y suelos históricos. 25 años de experiencia, método sin polvo.',
+    keywords: 'pulido de suelo en Aljarafe, pulido suelos Espartinas, pulido Tomares, pulido Mairena del Aljarafe, pulido Sanlúcar la Mayor, pulido Palomares del Río, pulido Almensilla, pulido Bormujos, pulido suelo Sevilla, comunidades de vecinos, oficinas, suelos históricos',
     canonical: BASE_URL + '/sobre-nosotros',
   },
   gallery: {

@@ -64,7 +64,7 @@ export default function LandingPremium() {
 
       <section className="cta-section">
         <h2>Responde en menos de 24h</h2>
-        <p>Solo clientes serios. Escríbenos por WhatsApp o llámanos.</p>
+        <p>Sin compromiso. Escríbenos por WhatsApp o llámanos.</p>
         <div className="cta-group">
           <a
             href={whatsappUrl}

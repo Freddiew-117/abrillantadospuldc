@@ -12,11 +12,11 @@ export default function Header() {
   ]
 
   return (
-    <header className="header">
+    <header className={`header ${menuOpen ? 'header--menu-open' : ''}`}>
       <div className="header__inner">
         <Link to="/" className="header__logo">
-          <img src="/images/puvicor2.png" alt="Pulidos y Abrillantados Pul D.C" width={120} height={48} />
-          <span>Pul D.C</span>
+          <img src="/images/puvicor2.png" alt="Pulidos y Abrillantados Pul D.C" width={44} height={44} />
+          <span className="header__brand">Abrillantados Pul D.C</span>
         </Link>
         <button
           className="header__hamburger"

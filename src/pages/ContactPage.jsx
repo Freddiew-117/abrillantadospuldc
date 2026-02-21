@@ -13,22 +13,29 @@ export default function ContactPage() {
     <>
       <MetaTags title={seo.title} description={seo.description} canonical={seo.canonical} />
       <JsonLd page="contact" />
-      <section className="section">
-        <div className="section__inner">
-          <h1>Contacto</h1>
-          <p>
-            Pulidos profesionales y tratamientos de suelos en Dos Hermanas, Utrera, Alcalá de Guadaíra, Sevilla, Mairena del Alcor y El Viso. Nos desplazamos por toda la provincia con experiencia y garantía de acabado.
+      <article className="contact-page">
+        <header className="contact-page__hero">
+          <div className="contact-page__hero-inner">
+            <h1 className="contact-page__title">Contacto</h1>
+            <p className="contact-page__lead">
+              Presupuesto sin compromiso. Atendemos en Dos Hermanas, Sevilla y provincia.
+            </p>
+          </div>
+        </header>
+        <div className="contact-page__content section__inner">
+          <p className="contact-page__intro">
+            Pulidos profesionales y tratamientos de suelos con más de 25 años de experiencia. Trabajamos para empresas, comunidades y particulares con garantía de acabado sin polvo.
           </p>
           <div className="contact-page__grid">
             <ContactInfo />
             <ContactForm />
           </div>
-          <p>
-            Equipo de profesionales cualificados con más de 30 años de experiencia. Trabajamos para empresas, comunidades de vecinos y particulares en Sevilla y provincia. Resultados premium y clientes siempre satisfechos.
+          <p className="contact-page__outro">
+            Equipo cualificado. Resultados premium. Clientes satisfechos en toda la provincia de Sevilla.
           </p>
         </div>
-      </section>
-      <Suspense fallback={<div className="contact-map" style={{ minHeight: 200 }} />}>
+      </article>
+      <Suspense fallback={<div className="contact-map-skeleton" />}>
         <Map />
       </Suspense>
     </>

@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import { siteData } from '@/data/seoKeywords'
+import { googleBusiness } from '@/data/googleBusiness'
 
 const PHONE_1 = '+34615434956'
 const PHONE_2 = '+34679478500'
@@ -13,13 +14,45 @@ const localBusiness = {
   telephone: [PHONE_1, PHONE_2],
   address: {
     '@type': 'PostalAddress',
+    streetAddress: '', // Add street address if available
     addressLocality: 'Dos Hermanas',
     addressRegion: 'Sevilla',
     postalCode: '41702',
     addressCountry: 'ES',
   },
+  geo: googleBusiness.geo ? {
+    '@type': 'GeoCoordinates',
+    latitude: googleBusiness.geo.latitude,
+    longitude: googleBusiness.geo.longitude,
+  } : undefined,
   priceRange: '€€',
-  areaServed: ['Dos Hermanas', 'Sevilla', 'Utrera', 'Alcalá de Guadaíra', 'Mairena del Alcor', 'El Viso'],
+  areaServed: [
+    'Dos Hermanas', 'Sevilla', 'Utrera', 'Alcalá de Guadaíra', 'Mairena del Alcor', 'El Viso',
+    'Espartinas', 'Tomares', 'Mairena del Aljarafe', 'Sanlúcar la Mayor', 'Palomares del Río', 'Almensilla', 'Bormujos', 'Simon Verde',
+  ],
+  // Google Business Profile integration
+  ...(googleBusiness.profileUrl && googleBusiness.profileUrl !== 'https://maps.app.goo.gl/...' ? {
+    sameAs: [googleBusiness.profileUrl],
+  } : {}),
+  // Aggregate rating from Google reviews
+  ...(googleBusiness.rating && googleBusiness.rating.count > 0 ? {
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: googleBusiness.rating.value,
+      reviewCount: googleBusiness.rating.count,
+      bestRating: 5,
+      worstRating: 1,
+    },
+  } : {}),
+  // Opening hours (if available)
+  ...(googleBusiness.openingHours ? {
+    openingHoursSpecification: googleBusiness.openingHours.map(hours => ({
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: hours.split(' ')[0],
+      opens: hours.split(' ')[1]?.split('-')[0],
+      closes: hours.split(' ')[1]?.split('-')[1],
+    })),
+  } : {}),
 }
 
 const organization = {
@@ -79,6 +112,29 @@ export default function JsonLd({ page = 'home' }) {
       description: 'Recuperamos mármoles deteriorados con técnicas profesionales. Servicio premium para viviendas exigentes y empresas.',
       provider: { '@type': 'LocalBusiness', name: 'Pulidos y Abrillantados Pul D.C' },
       areaServed: { '@type': 'City', name: 'Sevilla' },
+    })
+  }
+  if (page === 'about') {
+    const aboutLocations = [
+      'Espartinas', 'Tomares', 'Mairena del Aljarafe', 'Sanlúcar la Mayor',
+      'Palomares del Río', 'Almensilla', 'Bormujos', 'Sevilla', 'Dos Hermanas',
+    ]
+    aboutLocations.forEach((city) => {
+      schemas.push({
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        name: `Pulido de suelo en ${city}`,
+        description: `Pulido y abrillantado profesional de suelos en ${city}. Mármol, terrazo, granito y hormigón. Comunidades de vecinos, oficinas y suelos históricos. Método sin polvo.`,
+        provider: { '@type': 'LocalBusiness', name: 'Pulidos y Abrillantados Pul D.C' },
+        areaServed: { '@type': 'City', name: city },
+      })
+    })
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'Pulido de suelo en Aljarafe y Sevilla | Sobre Nosotros - Pul D.C',
+      description: 'Especialistas en pulido de suelos en el Aljarafe sevillano. Comunidades de vecinos, oficinas y suelos históricos.',
+      provider: { '@type': 'LocalBusiness', name: 'Pulidos y Abrillantados Pul D.C' },
     })
   }
 
