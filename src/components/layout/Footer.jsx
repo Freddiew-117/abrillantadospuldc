@@ -3,7 +3,7 @@ import PhoneButton from '@/components/shared/PhoneButton'
 import { googleBusiness } from '@/data/googleBusiness'
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP || '34615434956'
-const WHATSAPP_MESSAGE = 'Hola, me gustaría solicitar presupuesto de pulido de suelos'
+const WHATSAPP_MESSAGE = 'Hola, me gustaría solicitar presupuesto de restauración de suelos'
 
 const PHONE_1 = '+34615434956'
 const PHONE_2 = '+34679478500'

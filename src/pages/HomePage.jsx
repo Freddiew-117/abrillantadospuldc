@@ -17,8 +17,9 @@ export default function HomePage() {
       <Hero />
       <BeforeAfter />
       <Testimonials />
-      <ServicesPremium />
+      <ServicesPremium part="sevilla" />
       <AljarafeZonesSection />
+      <ServicesPremium part="barro" />
       <GuaranteeSection />
     </>
   )

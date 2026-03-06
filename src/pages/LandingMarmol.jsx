@@ -14,11 +14,11 @@ export default function LandingMarmol() {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
 
   const beneficios = [
-    'Resultados duraderos con acabado premium',
-    'Pulido sin polvo – adaptados a casas habitadas',
-    'Garantía profesional en brillo y acabado',
-    'Masilla y cemento profesional para retapado',
-    'Diamantes de alta calidad – brillo natural sin químicos',
+    'Resultados duraderos con acabado en brillo espejo',
+    'Restauración sin polvo – adaptados a casas habitadas',
+    'Garantía en eliminación de arañazos y sellado de juntas',
+    'Masilla y cemento profesional para retapado y porosidad',
+    'Pulido diamantado – brillo natural sin químicos',
   ]
 
   return (
@@ -29,7 +29,7 @@ export default function LandingMarmol() {
         <div className="section__inner">
           <h1>Pulido profesional de mármol en Dos Hermanas</h1>
           <p className="landing-hero__subtitle">
-            25 años de experiencia · Acabado premium. Especialistas en pulido y abrillantado de mármol de alto nivel.
+            25 años de experiencia · Acabado en brillo espejo. Restauración, cristalizado y eliminación de arañazos en mármol de alto nivel.
           </p>
           <div className="cta-group cta-group--landing">
             <a
@@ -55,7 +55,7 @@ export default function LandingMarmol() {
 
       <section className="section section--alt">
         <div className="section__inner">
-          <h2>Beneficios del pulido profesional de mármol</h2>
+          <h2>Beneficios del cristalizado y restauración de mármol</h2>
           <ul className="landing-benefits">
             {beneficios.map((b, i) => (
               <li key={i}>{b}</li>
@@ -68,7 +68,7 @@ export default function LandingMarmol() {
         <div className="section__inner">
           <h2>Nuestro proceso</h2>
           <p>
-            Empleamos masilla específica para tapar agujeros y grietas. Utilizamos diamantes de alta calidad para un acabado de brillo natural sin químicos. Disponemos de máquinas aspiradoras para trabajar sin levantar polvo. Acristalamos con sales y cristalizadores de alta calidad para proteger el resultado.
+            Empleamos masilla específica para tapar agujeros y grietas. Sellado de juntas y tratamiento de porosidad cuando el mármol lo requiere. Decapado previo si hay ceras antiguas. Pulido diamantado con discos de alta calidad para un acabado en brillo espejo sin químicos. Máquinas aspiradoras para trabajar sin levantar polvo. Cristalizado con sales y cristalizadores de alta calidad para proteger el resultado y un mantenimiento duradero.
           </p>
         </div>
       </section>

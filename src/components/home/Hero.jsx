@@ -14,12 +14,12 @@ const WHATSAPP_SVG = (
 function HeroContent({ whatsappUrl, trackWhatsAppClick }) {
   return (
     <>
-      <h1 className="hero__title hero__title--main">Tu suelo como nuevo en 24–48h – Pulido y abrillantado profesional de lujo</h1>
+      <h1 className="hero__title hero__title--main">Especialistas en Pulido y Abrillantado de Suelos en Sevilla y el Aljarafe.</h1>
       <p className="hero__subtitle hero__subtitle--main" style={{ color: 'white' }}>
-        25 años de experiencia restaurando suelos de mármol, granito y terrazos históricos.
+        Cristalizado, pulido diamantado y sellado de juntas. Mármol, terrazo, barro cocido y gres porcelánico. Mantenimiento de comunidades en Sevilla — Triana, Nervión, Aljarafe y provincia.
       </p>
       <p className="hero__desc" style={{ color: 'white' }}>
-        Garantía de acabado sin polvo y duradero
+        Brillo espejo y eliminación de arañazos. Garantía de acabado sin polvo y duradero.
       </p>
       <a
         href={whatsappUrl}
@@ -93,15 +93,17 @@ export default function Hero() {
         /* Layout full: imagen apaisada de fondo, texto centrado */
         <div
           className="hero__bg"
-          style={{ backgroundImage: `url(${landscapeImg})` }}
+          style={{ backgroundImage: `url(${landscapeImg.src})` }}
           key={`full-${landscapeIndex}`}
+          role="img"
+          aria-label={landscapeImg.alt}
         />
       ) : (
         /* Layout split: texto a la izquierda, imagen vertical a la derecha */
         <div className="hero__split">
           <div className="hero__split-dark" />
           <div className="hero__split-image" key={`split-${verticalIndex}`}>
-            <img src={verticalImg} alt="Pulido profesional de suelos" />
+            <img src={verticalImg.src} alt={verticalImg.alt} />
           </div>
         </div>
       )}

@@ -29,14 +29,6 @@ export default function ContactBar() {
             WhatsApp
           </a>
           <a
-            href={`tel:${PHONE_1}`}
-            className="contact-bar__link"
-            onClick={trackPhoneClick}
-            aria-label="Llamar al 615 43 49 56"
-          >
-            📞 +34 615 43 49 56
-          </a>
-          <a
             href={`tel:${PHONE_2}`}
             className="contact-bar__link"
             onClick={trackPhoneClick}
@@ -44,6 +36,15 @@ export default function ContactBar() {
           >
             📞 +34 679 47 85 00
           </a>
+          <a
+            href={`tel:${PHONE_1}`}
+            className="contact-bar__link"
+            onClick={trackPhoneClick}
+            aria-label="Llamar al 615 43 49 56"
+          >
+            📞 +34 615 43 49 56
+          </a>
+          
         </div>
       </div>
     </div>

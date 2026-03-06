@@ -1,6 +1,6 @@
 /**
  * Contenido SEO para la página Sobre Nosotros.
- * Orientado a: pulido de suelo en Aljarafe, Sevilla, comunidades de vecinos, oficinas, suelos históricos.
+ * Orientado a: restauración y cristalizado en Aljarafe, Sevilla, comunidades de vecinos, oficinas, suelos históricos.
  */
 export const ZONAS_SERVICIO = [
   { nombre: 'Espartinas', slug: 'espartinas' },
@@ -18,7 +18,7 @@ export const SEGMENTOS_CLIENTE = [
   {
     icon: 'building',
     titulo: 'Comunidades de vecinos',
-    desc: 'Pulido y abrillantado de suelos de mármol, terrazo y granito en portales, escaleras y zonas comunes. Restauración sin polvo, respetando horarios y con resultados duraderos. Presupuesto para comunidades en todo el Aljarafe y Sevilla.',
+    desc: 'Restauración y cristalizado de suelos de mármol, terrazo y granito en portales, escaleras y zonas comunes. Sellado de juntas, eliminación de arañazos y brillo espejo. Método sin polvo, respetando horarios. Presupuesto para comunidades en todo el Aljarafe y Sevilla.',
     keywords: ['comunidades de vecinos', 'portales', 'escaleras', 'zonas comunes'],
   },
   {
@@ -37,9 +37,9 @@ export const SEGMENTOS_CLIENTE = [
 
 export const EQUIPAMIENTO = [
   'Pulidoras de alta revolución para mármol, terrazo y granito',
-  'Pulidoras diamantadas para hormigón',
+  'Pulidoras diamantadas para hormigón y hormigón impreso',
   'Pulidoras para rincones, peldaños y espacios pequeños',
-  'Máquinas rotativas de alta calidad para acristalado',
+  'Máquinas rotativas para cristalizado y acabado en brillo espejo',
   'Aspiradoras industriales para trabajo sin polvo',
-  'Maquinaria para grandes superficies y trabajos menores',
+  'Sellado de juntas y tratamiento de porosidad',
 ]

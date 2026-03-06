@@ -64,7 +64,7 @@ export default function BeforeAfter() {
             <div className="before-after__image-wrapper">
               <img
                 src={getBeforeAfterImagePath(currentPair.before)}
-                alt={`Suelo antes del pulido - ${currentPair.name}`}
+                alt={currentPair.beforeAlt}
                 width={400}
                 height={300}
                 loading="lazy"
@@ -78,7 +78,7 @@ export default function BeforeAfter() {
             <div className="before-after__image-wrapper">
               <img
                 src={getBeforeAfterImagePath(currentPair.after)}
-                alt={`Suelo después del pulido profesional - ${currentPair.name}`}
+                alt={currentPair.afterAlt}
                 width={400}
                 height={300}
                 loading="lazy"

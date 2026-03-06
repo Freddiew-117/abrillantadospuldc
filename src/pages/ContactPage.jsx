@@ -30,7 +30,7 @@ export default function ContactPage() {
         </header>
         <div className="contact-page__content section__inner">
           <p className="contact-page__intro">
-            Pulidos profesionales y tratamientos de suelos con más de 25 años de experiencia. Trabajamos para empresas, comunidades y particulares con garantía de acabado sin polvo.
+            Restauración, cristalizado y tratamientos de suelos con más de 25 años de experiencia. Pulido diamantado, sellado de juntas y acabado en brillo espejo. Trabajamos para empresas, comunidades y particulares con garantía sin polvo.
           </p>
           <div className="contact-page__grid">
             <ContactInfo />

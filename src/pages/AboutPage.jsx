@@ -8,7 +8,7 @@ import Machinery from '@/components/about/Machinery'
 import GuaranteeSection from '@/components/shared/GuaranteeSection'
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP || '34615434956'
-const WHATSAPP_MESSAGE = 'Hola, me gustaría solicitar presupuesto de pulido de suelos'
+const WHATSAPP_MESSAGE = 'Hola, me gustaría solicitar presupuesto de restauración de suelos'
 
 const ICONS = {
   building: (
@@ -59,13 +59,13 @@ export default function AboutPage() {
         <section className="about-page__intro section" aria-labelledby="about-intro-heading">
           <div className="section__inner">
             <h2 id="about-intro-heading" className="about-page__section-title">
-              Especialistas en pulido y abrillantado de suelos en el Aljarafe
+              Restauración y cristalizado de suelos en el Aljarafe
             </h2>
             <p className="about-page__intro-text">
-              <strong>Pul D.C</strong> ofrece servicios de <strong>pulido de suelo en Aljarafe</strong> y provincia de Sevilla desde hace más de 25 años. 
+              <strong>Pul D.C</strong> ofrece <strong>restauración y cristalizado en Aljarafe</strong> y provincia de Sevilla desde hace más de 25 años. 
               Atendemos en <strong>Espartinas, Tomares, Mairena del Aljarafe, Sanlúcar la Mayor, Palomares del Río, Almensilla, Bormujos</strong> y por supuesto 
               <strong> Sevilla capital y Dos Hermanas</strong>. Trabajamos para <strong>comunidades de vecinos</strong>, empresas, oficinas y particulares con 
-              suelos de mármol, terrazo, granito y hormigón. Resultados sin polvo y con garantía.
+              suelos de mármol, terrazo, granito, hormigón impreso y gres porcelánico. Eliminación de arañazos, sellado de juntas y acabado en brillo espejo. Resultados sin polvo y con garantía.
             </p>
           </div>
         </section>
@@ -92,15 +92,15 @@ export default function AboutPage() {
         <section className="about-page__zonas section" aria-labelledby="zonas-heading">
           <div className="section__inner">
             <h2 id="zonas-heading" className="about-page__section-title about-page__section-title--center">
-              Pulido de suelo en estas localidades del Aljarafe y Sevilla
+              Restauración y abrillantado en estas localidades del Aljarafe y Sevilla
             </h2>
             <p className="about-page__zonas-intro">
-              Realizamos trabajos de pulido y abrillantado en portales, viviendas, oficinas y edificios históricos en:
+              Realizamos cristalizado, pulido diamantado y sellado de juntas en portales, viviendas, oficinas y edificios históricos en:
             </p>
             <ul className="about-page__zonas-list">
               {ZONAS_SERVICIO.map((z) => (
                 <li key={z.slug}>
-                  <strong>Pulido de suelo en {z.nombre}</strong>
+                  <strong>Restauración y cristalizado en {z.nombre}</strong>
                 </li>
               ))}
             </ul>

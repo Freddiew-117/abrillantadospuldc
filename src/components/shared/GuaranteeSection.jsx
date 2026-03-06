@@ -17,7 +17,7 @@ export default function GuaranteeSection() {
         </svg>
       ),
       title: '25 años',
-      desc: 'De experiencia en pulidos y abrillantados en Sevilla.',
+      desc: 'De experiencia en restauración y cristalizado de suelos en Sevilla.',
     },
     {
       icon: (
@@ -34,7 +34,7 @@ export default function GuaranteeSection() {
   return (
     <section className="guarantee-section section">
       <div className="section__inner">
-        <h2 className="guarantee-section__title">Garantía & Confianza</h2>
+        <h3 className="guarantee-section__title">¿Cómo trabajamos en Abrillantados Puld-C?</h3>
         <p className="guarantee-section__intro">
           Compromiso con cada proyecto desde 1999
         </p>
@@ -42,11 +42,15 @@ export default function GuaranteeSection() {
           {items.map((item, i) => (
             <article key={i} className="guarantee-section__card">
               <span className="guarantee-section__icon">{item.icon}</span>
-              <h3 className="guarantee-section__card-title">{item.title}</h3>
+              <p className="guarantee-section__card-title"><strong>{item.title}</strong></p>
               <p className="guarantee-section__card-desc">{item.desc}</p>
             </article>
           ))}
         </div>
+        <h3 className="guarantee-section__title guarantee-section__title--last">Presupuesto sin compromiso para comunidades y particulares.</h3>
+        <p className="guarantee-section__intro">
+          Llámanos o escríbenos por WhatsApp y te enviamos presupuesto sin compromiso.
+        </p>
       </div>
     </section>
   )

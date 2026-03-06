@@ -15,7 +15,7 @@ export default function Header() {
     <header className={`header ${menuOpen ? 'header--menu-open' : ''}`}>
       <div className="header__inner">
         <Link to="/" className="header__logo">
-          <img src="/images/puvicor2.png" alt="Pulidos y Abrillantados Pul D.C" width={44} height={44} />
+          <img src="/images/puvicor2.png" alt="Pulidos y Abrillantados Pul D.C - Restauración y cristalizado de suelos en Sevilla y Aljarafe" width={44} height={44} />
           <span className="header__brand">Abrillantados Pul D.C</span>
         </Link>
         <button

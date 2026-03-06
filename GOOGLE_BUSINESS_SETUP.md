@@ -44,6 +44,14 @@ Edita `src/data/googleBusiness.js`:
 export const googleBusiness = {
   profileUrl: 'https://maps.app.goo.gl/TU_ENLACE_AQUI',
   placeId: 'ChIJ...', // Opcional
+  // Dirección física (para Schema.org LocalBusiness)
+  address: {
+    streetAddress: 'Calle Ejemplo, 12', // Opcional: deja '' si no hay dirección pública
+    addressLocality: 'Dos Hermanas',
+    addressRegion: 'Sevilla',
+    postalCode: '41702',
+    addressCountry: 'ES',
+  },
   geo: {
     latitude: 37.2861, // Tu latitud
     longitude: -5.9209, // Tu longitud
@@ -52,8 +60,20 @@ export const googleBusiness = {
     value: 5.0, // Promedio de reseñas
     count: 12, // Número total de reseñas
   },
+  // Horario (opcional): formato ['Mo-Fr 09:00-18:00', 'Sa 09:00-14:00']
+  openingHours: null,
 }
 ```
+
+### 4.1 Marcado JSON-LD LocalBusiness (Schema)
+
+El sitio ya incluye **datos estructurados** en formato JSON-LD para decirle a Google:
+
+- **Que eres una empresa física** (`@type: LocalBusiness`)
+- **Dónde estás** (`address` + `geo`)
+- **Qué servicio das** (`description` + `serviceType` + schemas de `Service`)
+
+Se inyecta en el `<head>` en todas las páginas desde `src/components/seo/JsonLd.jsx`. La dirección y el resto de datos se leen de `googleBusiness.js`. Si rellenas `streetAddress` y `openingHours`, el schema los incluirá automáticamente.
 
 ### 5. Actualizar Reseñas Manualmente
 
@@ -91,9 +111,12 @@ VITE_GOOGLE_BUSINESS_URL=https://maps.app.goo.gl/...
 1. Ve a [Google Rich Results Test](https://search.google.com/test/rich-results)
 2. Introduce tu URL
 3. Verifica que aparezca:
-   - ✅ LocalBusiness
-   - ✅ AggregateRating (si tienes reseñas)
-   - ✅ sameAs con tu Google Business URL
+   - ✅ **LocalBusiness** (nombre, dirección, teléfono, descripción, serviceType, areaServed)
+   - ✅ **PostalAddress** (localidad, provincia, código postal; streetAddress si lo rellenaste)
+   - ✅ **ContactPoint** (teléfono, tipo customer service)
+   - ✅ **AggregateRating** (si tienes reseñas y count > 0)
+   - ✅ **sameAs** con tu Google Business URL
+   - ✅ Varios **Service** (pulido mármol, terrazo, cristalizado, etc.)
 
 ## 📊 Monitoreo
 

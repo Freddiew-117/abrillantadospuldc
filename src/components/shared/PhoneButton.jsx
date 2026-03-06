@@ -11,7 +11,7 @@ export default function PhoneButton({
 }) {
   const { trackPhoneClick } = useConversionTracking()
   
-  const displayNumber = number === PHONE_1 ? '+34 615 43 49 56' : '+34 679 47 85 00'
+  const displayNumber = number === PHONE_1 ? '+34 679 47 85 00' : '+34 615 43 49 56'
   const ariaLabel = label || `Llamar al ${displayNumber}`
 
   const handleClick = () => {

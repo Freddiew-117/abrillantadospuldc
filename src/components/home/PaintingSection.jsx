@@ -45,7 +45,7 @@ export default function PaintingSection() {
           <div className="painting-section__image">
             <img
               src="/images/pintores.jpeg"
-              alt="Servicios de pintura de interiores profesional - Pul D.C Dos Hermanas"
+              alt="Servicios de pintura de interiores en viviendas y comunidades de Dos Hermanas y Aljarafe"
               loading="lazy"
               width={600}
               height={400}
