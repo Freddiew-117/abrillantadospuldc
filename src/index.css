@@ -217,6 +217,47 @@ a.btn {
 }
 
 /* ============================================
+   Botón flotante Llamar ahora (inferior izquierda)
+   ============================================ */
+.call-float {
+  position: fixed;
+  bottom: max(var(--spacing-lg), env(safe-area-inset-bottom, 0px));
+  left: max(var(--spacing-lg), env(safe-area-inset-left, 0px));
+  z-index: 999;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: var(--touch-target);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  background: var(--color-call);
+  color: white !important;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal),
+    background-color var(--transition-fast);
+  white-space: nowrap;
+}
+.call-float:hover {
+  transform: scale(1.03);
+  background: var(--color-call-hover);
+  color: white !important;
+}
+.call-float:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.45);
+  outline-offset: 3px;
+}
+.call-float__icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  flex-shrink: 0;
+}
+
+/* ============================================
    Botón Llamar (CTA destacado)
    ============================================ */
 .btn-call {
@@ -317,6 +358,13 @@ a.btn {
   font-size: var(--font-size-sm);
   color: rgba(255, 255, 255, 0.8);
   margin: var(--spacing-xs) 0;
+}
+.footer__seo-blurb {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0 0 var(--spacing-sm);
+  max-width: 28rem;
 }
 .footer__location {
   font-size: var(--font-size-sm);

@@ -20,6 +20,9 @@ export default function Footer() {
           <div className="footer__brand">
             <span className="footer__logo">Pul D.C</span>
             <p className="footer__tagline">Pulidos y Abrillantados</p>
+            <p className="footer__seo-blurb">
+              Pulidores de suelo en Sevilla capital, Dos Hermanas y Aljarafe: pulido diamantado, cristalizado de mármol y terrazo, sellado de juntas y mantenimiento de comunidades.
+            </p>
             <p className="footer__location">Dos Hermanas, Sevilla 41702</p>
           </div>
           <nav className="footer__nav" aria-label="Enlaces del sitio">

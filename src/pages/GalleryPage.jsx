@@ -9,7 +9,12 @@ export default function GalleryPage() {
   const seo = seoConfig.gallery
   return (
     <>
-      <MetaTags title={seo.title} description={seo.description} canonical={seo.canonical} />
+      <MetaTags
+        title={seo.title}
+        description={seo.description}
+        canonical={seo.canonical}
+        keywords={seo.keywords}
+      />
       <JsonLd page="gallery" />
       <section className="section">
       <div className="section__inner">

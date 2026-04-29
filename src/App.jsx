@@ -7,6 +7,7 @@ import ScrollToTop from '@/components/layout/ScrollToTop'
 import Footer from '@/components/layout/Footer'
 import ContactBar from '@/components/layout/ContactBar'
 import WhatsAppButton from '@/components/shared/WhatsAppButton'
+import FloatingCallButton from '@/components/shared/FloatingCallButton'
 import CTASection from '@/components/home/CTASection'
 import './App.css'
 
@@ -43,6 +44,7 @@ function App() {
       </Suspense>
       <CTASection />
       <Footer />
+      <FloatingCallButton />
       <WhatsAppButton />
     </BrowserRouter>
   )

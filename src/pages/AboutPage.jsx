@@ -40,7 +40,12 @@ export default function AboutPage() {
 
   return (
     <>
-      <MetaTags title={seo.title} description={seo.description} canonical={seo.canonical} />
+      <MetaTags
+        title={seo.title}
+        description={seo.description}
+        canonical={seo.canonical}
+        keywords={seo.keywords}
+      />
       <JsonLd page="about" />
       <article className="about-page">
         {/* Hero */}

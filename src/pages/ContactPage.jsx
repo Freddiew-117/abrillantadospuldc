@@ -12,7 +12,12 @@ export default function ContactPage() {
   const seo = seoConfig.contact
   return (
     <>
-      <MetaTags title={seo.title} description={seo.description} canonical={seo.canonical} />
+      <MetaTags
+        title={seo.title}
+        description={seo.description}
+        canonical={seo.canonical}
+        keywords={seo.keywords}
+      />
       <JsonLd page="contact" />
       <article className="contact-page">
         <header className="contact-page__hero">

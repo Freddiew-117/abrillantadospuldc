@@ -23,7 +23,12 @@ export default function LandingMarmol() {
 
   return (
     <>
-      <MetaTags title={seo.title} description={seo.description} canonical={seo.canonical} />
+      <MetaTags
+        title={seo.title}
+        description={seo.description}
+        canonical={seo.canonical}
+        keywords={seo.keywords}
+      />
       <JsonLd page="landingMarmol" />
       <section className="section page-hero landing-hero">
         <div className="section__inner">

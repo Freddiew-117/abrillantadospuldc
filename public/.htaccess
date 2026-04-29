@@ -1,0 +1,14 @@
+# SPA (React/Vite): sirve archivos reales (assets/, images/) y el resto va a index.html.
+# Sube TODO el contenido de dist/ a la raíz web (public_html o equivalente): index.html y carpeta assets/ deben quedar juntos.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Evitar listado de directorios
+Options -Indexes

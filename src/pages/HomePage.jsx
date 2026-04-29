@@ -12,7 +12,12 @@ export default function HomePage() {
   const seo = seoConfig.home
   return (
     <>
-      <MetaTags title={seo.title} description={seo.description} canonical={seo.canonical} />
+      <MetaTags
+        title={seo.title}
+        description={seo.description}
+        canonical={seo.canonical}
+        keywords={seo.keywords}
+      />
       <JsonLd page="home" />
       <Hero />
       <BeforeAfter />

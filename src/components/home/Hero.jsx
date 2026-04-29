@@ -14,7 +14,9 @@ const WHATSAPP_SVG = (
 function HeroContent({ whatsappUrl, trackWhatsAppClick }) {
   return (
     <>
-      <h1 className="hero__title hero__title--main">Especialistas en Pulido y Abrillantado de Suelos en Sevilla y el Aljarafe.</h1>
+      <h1 className="hero__title hero__title--main">
+        Pulidores de suelo en Sevilla y el Aljarafe — Pulido y abrillantado profesional
+      </h1>
       <p className="hero__subtitle hero__subtitle--main" style={{ color: 'white' }}>
         Cristalizado, pulido diamantado y sellado de juntas. Mármol, terrazo, barro cocido y gres porcelánico. Mantenimiento de comunidades en Sevilla — Triana, Nervión, Aljarafe y provincia.
       </p>
