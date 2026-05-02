@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 import { siteData } from '@/data/seoKeywords'
 import { googleBusiness } from '@/data/googleBusiness'
+import { FAQS } from '@/data/faqData'
 
 const PHONE_1 = '+34615434956'
 const PHONE_2 = '+34679478500'
@@ -36,14 +37,23 @@ const knowsAboutList = [
 // LocalBusiness + tipo sectorial para intención local (reformas / obra)
 const localBusiness = {
   '@context': 'https://schema.org',
+  '@id': `${siteData.url}/#localbusiness`,
   '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
   name: 'Pulidos y Abrillantados Pul D.C',
   alternateName: 'Pul D.C',
+  legalName: 'Pulidos y Abrillantados Pul D.C',
   description: siteData.description,
   slogan: 'Pulidores de suelo en Sevilla y provincia',
   image: `${siteData.url}/images/puvicor2.png`,
+  logo: `${siteData.url}/images/puvicor2.png`,
   url: siteData.url,
+  email: 'contactopuldc@gmail.com',
   telephone: [PHONE_1, PHONE_2],
+  foundingDate: '1999',
+  founder: {
+    '@type': 'Person',
+    name: 'David Villalón Coronado',
+  },
   address: buildPostalAddress(),
   geo: googleBusiness.geo
     ? {
@@ -83,13 +93,22 @@ const localBusiness = {
     'Sellado de juntas',
     'Mantenimiento de comunidades',
   ],
-  contactPoint: {
-    '@type': 'ContactPoint',
-    telephone: PHONE_1,
-    contactType: 'customer service',
-    areaServed: 'ES',
-    availableLanguage: 'Spanish',
-  },
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      telephone: PHONE_1,
+      contactType: 'customer service',
+      areaServed: 'ES',
+      availableLanguage: ['Spanish', 'es-ES'],
+    },
+    {
+      '@type': 'ContactPoint',
+      telephone: PHONE_2,
+      contactType: 'sales',
+      areaServed: 'ES',
+      availableLanguage: ['Spanish', 'es-ES'],
+    },
+  ],
   ...(googleBusiness.profileUrl &&
   googleBusiness.profileUrl !== 'https://maps.app.goo.gl/...'
     ? {
@@ -243,11 +262,28 @@ const serviceSchema = (service) => ({
   },
 })
 
+const faqPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.a,
+    },
+  })),
+}
+
 export default function JsonLd({ page = 'home' }) {
   const schemas = [webSiteSchema, localBusiness, organization]
 
   const breadcrumb = buildBreadcrumbList(page)
   if (breadcrumb) schemas.push(breadcrumb)
+
+  if (page === 'home' || page === 'contact' || page === 'about') {
+    schemas.push(faqPageSchema)
+  }
 
   if (page === 'home' || page === 'landingMarmol' || page === 'landingPremium') {
     schemas.push(...services.map(serviceSchema))

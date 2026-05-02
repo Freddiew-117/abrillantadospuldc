@@ -32,9 +32,11 @@ export default function GuaranteeSection() {
   ]
 
   return (
-    <section className="guarantee-section section">
+    <section className="guarantee-section section" aria-labelledby="guarantee-title">
       <div className="section__inner">
-        <h3 className="guarantee-section__title">¿Cómo trabajamos en Abrillantados Puld-C?</h3>
+        <h2 id="guarantee-title" className="guarantee-section__title">
+          ¿Cómo trabajamos en Pulidos y Abrillantados Pul D.C?
+        </h2>
         <p className="guarantee-section__intro">
           Compromiso con cada proyecto desde 1999
         </p>
@@ -47,7 +49,9 @@ export default function GuaranteeSection() {
             </article>
           ))}
         </div>
-        <h3 className="guarantee-section__title guarantee-section__title--last">Presupuesto sin compromiso para comunidades y particulares.</h3>
+        <p className="guarantee-section__title guarantee-section__title--last">
+          Presupuesto sin compromiso para comunidades y particulares.
+        </p>
         <p className="guarantee-section__intro">
           Llámanos o escríbenos por WhatsApp y te enviamos presupuesto sin compromiso.
         </p>

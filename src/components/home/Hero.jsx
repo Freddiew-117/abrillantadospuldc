@@ -105,7 +105,13 @@ export default function Hero() {
         <div className="hero__split">
           <div className="hero__split-dark" />
           <div className="hero__split-image" key={`split-${verticalIndex}`}>
-            <img src={verticalImg.src} alt={verticalImg.alt} />
+            <img
+              src={verticalImg.src}
+              alt={verticalImg.alt}
+              width={800}
+              height={1200}
+              fetchpriority="high"
+            />
           </div>
         </div>
       )}

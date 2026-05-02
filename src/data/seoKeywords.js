@@ -6,35 +6,35 @@ export const defaultOgImageAlt =
 
 export const seoConfig = {
   home: {
-    title: 'Pulidores de suelo en Sevilla | Pulido y abrillantado | Pul D.C',
+    title: 'Pulidor de suelos en Sevilla | Casa, garaje, oficina y comunidades | Pul D.C',
     description:
-      'Pulidores de suelo en Sevilla y Aljarafe: pulido diamantado, cristalizado y abrillantado de mármol, terrazo, barro cocido y hormigón. Sellado de juntas, comunidades y brillo espejo. Triana, Nervión, Dos Hermanas. Presupuesto sin compromiso.',
+      'Pulidor de suelos en Sevilla: pulido y abrillantado de mármol, terrazo, barro cocido y hormigón en casas, garajes, oficinas y comunidades de vecinos. Sevilla capital, Aljarafe, Dos Hermanas. Presupuesto sin compromiso.',
     keywords:
-      'pulidores de suelo Sevilla, pulido de suelos Sevilla, abrillantado suelos Sevilla, pulidor mármol Sevilla, cristalizado terrazo Sevilla, pulido diamantado Aljarafe, sellado juntas comunidades, mantenimiento suelos Triana Nervión',
+      'pulidor de suelo Sevilla, pulir suelo Sevilla, pulidores suelos Sevilla, pulir suelo casa Sevilla, pulir suelo garaje Sevilla, pulir suelo oficina Sevilla, pulir suelo comunidad vecinos Sevilla, abrillantado mármol Sevilla, cristalizado terrazo Sevilla, pulido diamantado hormigón',
     canonical: BASE_URL + '/',
   },
   about: {
-    title: 'Pulido de suelos en Aljarafe y Sevilla | Empresa Pul D.C',
+    title: 'Empresa de pulido de suelos en Sevilla y Aljarafe | Pul D.C',
     description:
-      'Empresa de pulido de suelos en Sevilla y el Aljarafe: restauración, cristalizado y pulido diamantado para comunidades, oficinas y suelos históricos. Espartinas, Tomares, Mairena, Bormujos, Dos Hermanas. Método sin polvo.',
+      'Empresa de pulidores de suelo en Sevilla y el Aljarafe: pulido y abrillantado para casas, garajes, oficinas, comunidades de vecinos y suelos históricos. Espartinas, Tomares, Mairena, Bormujos, Dos Hermanas. Método sin polvo.',
     keywords:
-      'pulido suelos Aljarafe, empresa pulidora suelos Sevilla, restauración suelos comunidades Sevilla, cristalizado terrazo Aljarafe',
+      'empresa pulidora suelos Sevilla, pulidor de suelo Aljarafe, restauración suelos comunidades Sevilla, cristalizado terrazo Aljarafe, pulir suelo casa habitada',
     canonical: BASE_URL + '/sobre-nosotros',
   },
   gallery: {
-    title: 'Proyectos: pulido y abrillantado de suelos en Sevilla | Pul D.C',
+    title: 'Proyectos de pulido de suelos en Sevilla | Antes y después | Pul D.C',
     description:
-      'Galería de trabajos de pulido de suelos en Sevilla y provincia: mármol, terrazo, granito, hormigón impreso y gres. Cristalizado, pulido diamantado y acabados en brillo espejo antes y después.',
+      'Galería de proyectos de pulido y abrillantado de suelos en Sevilla y provincia: mármol, terrazo, granito, hormigón y gres. Casas, garajes, oficinas y comunidades de vecinos. Antes y después de cada trabajo.',
     keywords:
-      'proyectos pulido suelos Sevilla, antes después mármol terrazo, galería abrillantado Sevilla',
+      'proyectos pulido suelos Sevilla, antes después mármol terrazo, galería abrillantado Sevilla, restauración garajes comunidades',
     canonical: BASE_URL + '/proyectos',
   },
   contact: {
-    title: 'Contacto pulidores de suelo Sevilla | Presupuesto | Pul D.C',
+    title: 'Contacto pulidor de suelos en Sevilla | Presupuesto sin compromiso | Pul D.C',
     description:
-      'Contacta con pulidores de suelo en Sevilla y provincia. Presupuesto sin compromiso por teléfono o WhatsApp. Dos Hermanas, Utrera, Alcalá de Guadaíra, Mairena del Alcor y capital.',
+      'Contacta con pulidores de suelo en Sevilla y provincia. Presupuesto sin compromiso por teléfono o WhatsApp para pulir suelos en casa, garaje, oficina o comunidad de vecinos. Dos Hermanas, Utrera, Alcalá, Mairena del Alcor y capital.',
     keywords:
-      'contacto pulidores suelos Sevilla, presupuesto pulido mármol Sevilla, teléfono abrillantado terrazo',
+      'contacto pulidores suelos Sevilla, presupuesto pulido mármol Sevilla, teléfono abrillantado terrazo, pulir suelo Aljarafe presupuesto',
     canonical: BASE_URL + '/contacto',
   },
   landingMarmol: {
@@ -46,12 +46,18 @@ export const seoConfig = {
     canonical: BASE_URL + '/pulido-marmol-dos-hermanas',
   },
   landingPremium: {
-    title: 'Abrillantado profesional de suelos en Sevilla | Mármol | Pul D.C',
+    title: 'Abrillantado profesional de suelos de mármol en Sevilla | Pul D.C',
     description:
-      'Servicio premium de abrillantado y pulido de suelos de mármol en Sevilla para viviendas y empresas. Recuperamos mármoles deteriorados con técnicas profesionales y acabado duradero.',
+      'Servicio premium de abrillantado y pulido de suelos de mármol en Sevilla para viviendas, oficinas y comunidades. Recuperamos mármoles deteriorados con técnicas profesionales y acabado duradero.',
     keywords:
       'abrillantado profesional mármol Sevilla, pulido suelos premium Sevilla, restauración mármol alta gama',
     canonical: BASE_URL + '/abrillantado-profesional-sevilla',
+  },
+  avisoLegal: {
+    title: 'Aviso legal y política de privacidad | Pul D.C',
+    description:
+      'Aviso legal, política de privacidad y cookies de Pulidos y Abrillantados Pul D.C, pulidor de suelos en Sevilla.',
+    canonical: BASE_URL + '/aviso-legal',
   },
 }
 

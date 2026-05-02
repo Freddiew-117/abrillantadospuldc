@@ -1,13 +1,16 @@
 import { Link } from 'react-router-dom'
 import MetaTags from '@/components/seo/MetaTags'
+import { seoConfig } from '@/data/seoKeywords'
 
 export default function AvisoLegalPage() {
+  const seo = seoConfig.avisoLegal
   return (
     <>
       <MetaTags
-        title="Aviso legal y política de privacidad | Pul D.C"
-        description="Aviso legal, política de privacidad y cookies de Pulidos y Abrillantados Pul D.C."
-        canonical={import.meta.env.VITE_SITE_URL + '/aviso-legal'}
+        title={seo.title}
+        description={seo.description}
+        canonical={seo.canonical}
+        noindex
       />
       <article className="aviso-legal-page">
         <header className="aviso-legal-page__hero">

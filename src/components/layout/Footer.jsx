@@ -32,6 +32,21 @@ export default function Footer() {
             <Link to="/proyectos" className="footer__link">Proyectos</Link>
             <Link to="/contacto" className="footer__link">Contacto</Link>
           </nav>
+          <nav className="footer__nav" aria-label="Servicios destacados">
+            <span className="footer__nav-title">Servicios</span>
+            <Link to="/pulido-marmol-dos-hermanas" className="footer__link">
+              Pulido de mármol en Dos Hermanas
+            </Link>
+            <Link to="/abrillantado-profesional-sevilla" className="footer__link">
+              Abrillantado profesional en Sevilla
+            </Link>
+            <Link to="/sobre-nosotros" className="footer__link">
+              Pulido en comunidades de vecinos
+            </Link>
+            <Link to="/contacto" className="footer__link">
+              Pulido suelos garaje y oficina
+            </Link>
+          </nav>
           <div className="footer__contact">
             <span className="footer__nav-title">Contacto</span>
             <div className="footer__phones">
